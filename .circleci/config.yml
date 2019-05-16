@@ -8,11 +8,11 @@ jobs:
       - checkout
       - run: echo "we can run a cirlce command"
       - run:
-        name: Update master
-        command: |
-          if [ "$CIRCLE_BRANCH" = "solution"]; then
-            parser.rb
-          fi
+          name: Update master
+          command: |
+            if [[ "$CIRCLE_BRANCH" = "solution" ]]; then
+              parser.rb
+            fi
 
 workflows:
   version: 2
