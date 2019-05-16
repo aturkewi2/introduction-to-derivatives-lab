@@ -10,7 +10,7 @@ jobs:
       - run:
         name: Update master
         command: |
-          if [[ "$CIRCLE_BRANCH" = "solution"]]; then
+          if [ "$CIRCLE_BRANCH" = "solution"]; then
             parser.rb
           fi
 
